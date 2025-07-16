@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.heading {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+    align-items: center;      
+    width: 100%;
+    height: 150px;
+    background-color: #bbb;  
+}
+
+.heading h2 {
+    font-size: 46px;          
+    font-weight: bold;  
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif     
+}
+.colum_div{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.808);
+    padding: 10px;
+}.colum{
+    width: 350px;
+    height: 500px;
+    background-color: orange;
+    border-radius: 10px;
+    transition: all ease 0.5s;  
+}.colum:hover{
+    background-color: rgb(219, 142, 0);
+}.colum h2{
+    padding: 15px;
+    font-size: 40px;
+    text-align: center;
+    background-color: orangered;
+    font-family: Tahoma ;
+}.colum p{
+    font-size: 25px;
+    padding: 15px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}.colum p:hover{
+    color: #fff;
+}
+
+
+
+.Center_part{
+    width: 100%;
+    height: fit-content;
+    background-color: #d0d0d0;
+    display: flex;
+    
+}.About_dev{
+    padding: 25px;
+}.About_dev h2{
+    font-size: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}.About_dev p{
+    padding-top: 10px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Section_part{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.755);
+}
+.Sec_div_imageschool{
+    width: 100%;
+    height: fit-content;
+    padding: 25px;
+}.Sec_div_imageschool h2{
+    padding-bottom: 15px;
+    font-size: 45px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #fff;
+}.Sec_div_imageschool img{
+    width: 700px;
+    height: 350px;
+    display: block;
+    margin: 0 auto;
+}.School_location{
+    padding: 20px;
+    padding-top: 25px;
+}.School_location h2{
+    font-size: 32px;
+    text-align: none;
+}.Sec_div_imageschool p{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color: #fff;
+    padding-top: 15px;
+}
