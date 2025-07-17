@@ -1,105 +1,250 @@
-*{
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.heading {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;  
-    align-items: center;      
-    width: 100%;
-    height: 150px;
-    background-color: #bbb;  
-}
-
-.heading h2 {
-    font-size: 46px;          
-    font-weight: bold;  
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif     
-}
-.colum_div{
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    
-    flex-wrap: wrap;
-    background-color: rgba(0, 0, 0, 0.808);
-    padding: 10px;
-}.colum{
-    width: 350px;
-    height: 500px;
-    background-color: orange;
-    border-radius: 10px;
-    transition: all ease 0.5s;  
-}.colum:hover{
-    background-color: rgb(219, 142, 0);
-}.colum h2{
-    padding: 15px;
-    font-size: 40px;
-    text-align: center;
-    background-color: orangered;
-    font-family: Tahoma ;
-}.colum p{
-    font-size: 25px;
-    padding: 15px;
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}.colum p:hover{
-    color: #fff;
-}
-
-
-
-.Center_part{
-    width: 100%;
-    height: fit-content;
-    background-color: #d0d0d0;
-    display: flex;
-    
-}.About_dev{
-    padding: 25px;
-}.About_dev h2{
-    font-size: 35px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}.About_dev p{
-    padding-top: 10px;
-    font-size: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.Section_part{
+/* Heading */
+#heading {
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.755);
+    align-items: center;
+    flex-wrap: wrap;
 }
-.Sec_div_imageschool{
+.head_div {
     width: 100%;
-    height: fit-content;
-    padding: 25px;
-}.Sec_div_imageschool h2{
-    padding-bottom: 15px;
-    font-size: 45px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 15px;
+    background-color: #c3c3c3;
+}
+.head_div h2 {
+    color: orange;
+    font-size: 38px;
     text-align: center;
-    color: #fff;
-}.Sec_div_imageschool img{
-    width: 700px;
-    height: 350px;
-    display: block;
-    margin: 0 auto;
-}.School_location{
-    padding: 20px;
-    padding-top: 25px;
-}.School_location h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.head_div p {
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* Intro section*/
+
+.intro_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 160px 60px;
+    background-color: #f5f5f5;
+    border-bottom: 2px solid #ccc;
+}
+
+.intro_img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.About_div:hover {
+    box-shadow: 0 0 15px 3px rgba(255, 165, 0, 0.7);
+    transition: box-shadow 0.3s ease;
+}
+
+.intro_text {
+    max-width: 500px;
+    text-align: left;
+}
+
+.intro_text h2 {
     font-size: 32px;
-    text-align: none;
-}.Sec_div_imageschool p{
-    font-size: 20px;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+}
+
+.intro_text p {
+    font-size: 18px;
+    color: #444;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* About */
+#About {
+    margin: 0 auto;
+    width: 100%;
+    min-height: 90vh;
+    background-color: #666666;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    padding-bottom: 80px;
+}
+.About_div {
+    width: 300px;
+    height: auto;
+    background-color: orange;
+    margin-top: 20px;
+    padding-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}
+.About_div h2 {
+    background-color: orangered;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-    color: #fff;
-    padding-top: 15px;
+    font-size: 30px;
+    padding: 10px;
+    color: white;
+}
+.About_div p {
+    padding: 15px;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+
+.Get_started_Attribute {
+    position: absolute;
+    width: 330px;
+    background-color: green;
+    color: white;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.Get_started_Attribute:hover {
+    background-color: limegreen;
+    
+}
+
+/* Section */
+#Section {
+    background-color: #ddd;
+    padding: 40px 10px;
+}
+.Section_div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+.Section_p_head_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 450px;
+}
+.Section_p_head_wrap h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+.Section_p_head_wrap p {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Section_div img {
+    width: 450px;
+    height: 300px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/* Discord links */
+.discord_download {
+    text-decoration: none;
+    color: blue;
+    transition: all .3s ease-in-out;
+}
+.discord_download:hover {
+    color: orange;
+}
+
+.Discord_group_link {
+    padding: 10px;
+    width: fit-content;
+    background-color: purple;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 14px;
+    border-radius: 7px;
+    transition: all .5s ease-in-out;
+}
+.Discord_group_link:hover {
+    background-color: rgb(154, 69, 154);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .About_div {
+        width: 90%;
+    }
+
+    .Section_div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Section_div img {
+        width: 90%;
+        height: auto;
+    }
+}
+
+
+/* Add this to your existing CSS */
+
+/* Heading container flexbox */
+#heading .head_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+    background-color: #c3c3c3;
+    flex-wrap: wrap;
+}
+
+/* Logo styling */
+.logo {
+    max-height: 60px;
+    width: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* Text container to keep heading and p stacked vertically */
+.head_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Responsive tweaks for small screens */
+@media (max-width: 480px) {
+    #heading .head_div {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .logo {
+        max-height: 50px;
+    }
+    .head_div h2 {
+        font-size: 28px;
+    }
+    .head_div p {
+        font-size: 18px;
+    }
 }
