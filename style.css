@@ -1,0 +1,407 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+ul,ol{
+    list-style-type: none;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Navbar part */
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.colored_text{
+    color: blue;
+    font-size: 55px
+}
+.text-inside {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    font-size: 32px;
+    
+    text-align: center;
+    font-family: sans-serif;
+    font-family: "Inter", sans-serif;
+}
+
+/* Section part */
+.Cards_div {
+    width: 90%;
+    margin: 40px auto;
+    height: fit-content;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    display: flex;
+    padding: 30px;
+    border-radius: 0 0 15px 15px;
+    transition: all ease 0.4s;
+}
+
+.Cards_div:hover {
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+    border-color: transparent;
+    background-color: #fff;
+}
+
+.cards h2 {
+    font-size: 48px;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    color: #0056b3;
+    margin-bottom: 20px;
+}
+
+.cards p {
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    line-height: 1.8;
+    color: #333;
+}
+
+.cards .highlighted {
+    color: #007bff;
+    font-weight: 700;
+}
+
+.cards .quote {
+    margin-top: 25px;
+    font-style: italic;
+    color: #666;
+}
+
+.about_whole_section {
+    background-color: #f7f9fb;
+    padding: 80px 0;
+}
+
+.about_main_container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section_title {
+    font-size: 48px;
+    font-family: "Inter", sans-serif;
+    color: #1a1a1a;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.about_cards_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.about_card {
+    background-color: #ffffff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    width: 300px;
+    transition: all 0.3s ease-in-out;
+}
+
+.about_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+.about_card h3 {
+    font-size: 24px;
+    color: #0c4a6e;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 15px;
+}
+
+.about_card p {
+    font-size: 16px;
+    color: #333333;
+    font-family: "Inter", sans-serif;
+    
+    line-height: 1.6;
+}
+
+.container_section{
+    padding: 20px;
+}
+.Another_h2{
+    text-align: center;
+}
+.Dev_intro {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 10px;
+    max-width: 90%;
+    word-wrap: break-word;
+    box-sizing: border-box;
+}
+
+.Dev_intro h2 {
+    font-size: 32px;
+    color: #0056b3;
+    margin-bottom: 15px;
+    font-family: "Inter", sans-serif;
+}
+
+.Dev_intro p {
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+
+
+/*Settings CSS*/
+.Settings {
+    background-color: #1a1a1a;
+    width: 100%;
+    padding: 40px 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Settings_main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.Settings_part {
+    flex: 1;
+    min-width: 200px;
+}
+
+.Settings_part h2 {
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #444;
+    padding-bottom: 10px;
+}
+.Settings_part p a {
+    color: #d4d4d4;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.Settings_part p a:hover {
+    color: #00bfff;
+    transform: translateX(5px);
+}
+
+
+
+/* Get started CSS*/
+
+.Get_started {
+    width: 100%;
+    height: 100px;
+    background-color: orange;
+    display: flex;
+    justify-content: center;  
+    align-items: center;  
+      
+}
+
+.Get_started a {
+    text-align: center;
+    border-radius: 12px;
+    font-weight: 700;
+    padding: 20px;
+    width: 60%;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: "Inter", sans-serif;
+    color: #fff;
+    background-color: #000;
+
+    transition: all linear .3s;   
+}.Get_started a:hover{
+    background-color: #fff;
+    font-size: 32px;
+    color: #000;
+}
+
+
+/*footer css*/
+
+.Footer_div{
+    padding: 25px;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    background-color: #ddd;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------- RESPONSIVE STYLES ---------- */
+@media (max-width: 1024px) {
+    .about_cards_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Cards_div {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .section_title {
+        font-size: 36px;
+    }
+
+    .cards h2 {
+        font-size: 36px;
+    }
+
+    .cards p {
+        font-size: 18px;
+    }
+
+    .colored_text {
+        font-size: 45px;
+    }
+
+    .text-inside {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .image-wrapper {
+        height: 300px;
+    }
+
+    .text-inside {
+        font-size: 24px;
+    }
+
+    .Cards_div {
+        width: 95%;
+    }
+
+    .about_card {
+        width: 90%;
+    }
+
+    .Dev_intro {
+        width: 90%;
+        margin: auto;
+    }
+
+    .section_title {
+        font-size: 32px;
+    }
+
+    .cards h2 {
+        font-size: 28px;
+    }
+
+    .cards p {
+        font-size: 16px;
+    }
+
+    .Settings_main {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .Settings_part {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer .Footer_div {
+        font-size: 14px;
+        text-align: center;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .colored_text {
+        font-size: 32px;
+    }
+
+    .text-inside {
+        font-size: 20px;
+    }
+
+    .cards p,
+    .about_card p {
+        font-size: 15px;
+    }
+
+    .cards h2,
+    .about_card h3 {
+        font-size: 24px;
+    }
+
+    .section_title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Dev_intro h2 {
+        font-size: 24px;
+    }
+
+    .Dev_intro p {
+        font-size: 16px;
+    }
+
+    .section_title {
+        font-size: 32px;
+    }
+
+    .Cards_div {
+        flex-direction: column;
+        padding: 20px;
+    }
+}
+
