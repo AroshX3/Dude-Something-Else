@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+ol,ul{
+    list-style-type: none;
+}
+
+/*Menu Css*/
+.Menu{
+    width: 100%;
+    height: fit-content;
+}
+.menu_main {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ebebeb;
+    align-items: center;    
+    border: 2px solid #ddd;
+    transition: all linear .4s;
+    
+}.menu_main:hover{
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.7);
+    border: transparent;
+}.Logo_main{
+    font-size: 45px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+}.Logo_main img{
+    width: 150px;
+    height: 150px;
+}ul{
+    display: flex;
+    gap: 20px;
+}
+ul li a{
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: rgb(250, 162, 0);
+
+    transition: all linear .3s;
+}a:hover{
+    color: rgb(255, 187, 60);
+    font-size: 26px;
+}
+
